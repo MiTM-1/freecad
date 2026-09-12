@@ -78,6 +78,9 @@
      </item>
      <item row="1" column="1">
       <widget class="QComboBox" name="modeComboBox">
+       <property name="toolTip">
+        <string>Selects the offset mode: Skin offsets along the surface, Pipe offsets a curve to create a pre-surface, and Recto verso offsets a surface shell on both sides.</string>
+       </property>
        <item>
         <property name="text">
          <string>Skin</string>
@@ -104,6 +107,9 @@
      </item>
      <item row="2" column="1">
       <widget class="QComboBox" name="joinComboBox">
+       <property name="toolTip">
+        <string>Selects how adjacent offset faces are joined: Arc creates rounded joins, while Intersection extends adjacent faces until they intersect.</string>
+       </property>
        <item>
         <property name="text">
          <string>Arc</string>
@@ -120,6 +126,9 @@
    </item>
    <item>
     <widget class="QCheckBox" name="checkIntersection">
+     <property name="toolTip">
+      <string>Calculates intersections using all generated offset faces, which can help avoid some self-intersections in the result.</string>
+     </property>
      <property name="text">
       <string>Intersection</string>
      </property>
